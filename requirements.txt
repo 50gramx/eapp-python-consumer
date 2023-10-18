@@ -1,0 +1,6 @@
+--extra-index-url http://python.delivery.50gramx.com
+eapp_python_domain==0.3.0
+pytest~=7.4.2
+ethos~=0.0.1
+PyYAML~=6.0.1
+setuptools~=62.3.2

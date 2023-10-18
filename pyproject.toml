@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+#
+#[pytest]
+#markers =
+#    mock: Mark tests as mock tests.
+#    actual: Mark tests as actual tests.
+
+# Run mock tests only: pytest -m mock
+# Run actual tests only: pytest -m actual
+# Run all tests: pytest

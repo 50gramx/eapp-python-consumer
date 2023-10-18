@@ -1,0 +1,8 @@
+[distutils]
+index-servers =
+  local
+
+[local]
+repository: http://python.delivery.50gramx.com
+username: Amit-Khetan-70
+password: getethos
