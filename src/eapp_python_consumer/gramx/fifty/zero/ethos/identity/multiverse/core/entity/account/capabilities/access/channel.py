@@ -2,7 +2,7 @@ import grpc
 
 import yaml
 
-CONFIG_FILE_PATH = "/opt/ethos/apps/service/eapp-python-consumer/src/eapp_python_consumer/gramx/fifty/zero/ethos/identity/multiverse/developer_config.yaml"
+CONFIG_FILE_PATH = "gramx/fifty/zero/ethos/identity/multiverse/developer_config.yaml"
 
 
 def create_developer_channel(service_name, insecure=True):
