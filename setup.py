@@ -16,6 +16,6 @@ setup(
     install_requires=['protobuf==3.14.0', 'grpcio==1.34.0', 'grpcio-tools==1.34.0', 'ethos', 'PyYAML~=6.0.1'],
     include_package_data=True,
     package_data={
-        '': ['gramx/fifty/zero/ethos/identity/multiverse/developer_config.yaml'],
+        '': ['**/*.yaml'],
     },
 )

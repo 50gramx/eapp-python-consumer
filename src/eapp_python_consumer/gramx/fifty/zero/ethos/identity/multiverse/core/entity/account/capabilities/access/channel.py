@@ -5,8 +5,8 @@ import yaml
 
 
 def create_developer_channel(service_name, insecure=True):
-    resource_package = 'eapp_python_consumer'
-    resource_path = 'gramx/fifty/zero/ethos/identity/multiverse/developer_config.yaml'
+    resource_package = 'gramx'
+    resource_path = 'fifty/zero/ethos/identity/multiverse/developer_config.yaml'
     config_stream = pkg_resources.resource_stream(resource_package, resource_path)
 
     with config_stream as config_file:
