@@ -1,8 +1,7 @@
 [distutils]
-index-servers =
-  local
+index-servers = local
 
 [local]
-repository: http://python.delivery.50gramx.com
-username: Amit-Khetan-70
-password: getethos
+repository = https://pypi.pkg.jetbrains.space/50gramx/p/main/python-delivery/legacy
+username = 85301fb9-f857-4cbd-b919-d030bf6423ce
+password = eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiI4NTMwMWZiOS1mODU3LTRjYmQtYjkxOS1kMDMwYmY2NDIzY2UiLCJhdWQiOiI4NTMwMWZiOS1mODU3LTRjYmQtYjkxOS1kMDMwYmY2NDIzY2UiLCJvcmdEb21haW4iOiI1MGdyYW14IiwibmFtZSI6IkV0aG9zIEFwcHMgU2VydmljZSBDb250cmFjdHMiLCJpc3MiOiJodHRwczpcL1wvNTBncmFteC5qZXRicmFpbnMuc3BhY2UiLCJwZXJtX3Rva2VuIjoiNEVQdElMNEZrOW9nIiwicHJpbmNpcGFsX3R5cGUiOiJTRVJWSUNFIiwiaWF0IjoxNjkyOTcyMzY5fQ.Ayv62pNuNGiXCOYm-BjnpkW9X4ozMbfYv159Ana2Y1xAnbzQE5zRgTII3VKXyHAq_F8FLGvvrO5Gds7rGuLGaAH9jGp0Pxtl4AYh0XZv_QFiZs7432MvwVvfqv3SKOzNW3pyMDNx20fnhBLb2tzwzE3_1sJbfsuTcTHCRGTNJBE
