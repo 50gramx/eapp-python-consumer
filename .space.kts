@@ -31,7 +31,7 @@ job("Distribute Python Consumer Package") {
         }
     }
 
-    container(displayName = "Python Domain Build", image = "python:3.9.16") {
+    container(displayName = "Python Consumer Build", image = "python:3.9.16") {
 
         env["EAPP_PYTHON_CONSUMER_DIR"] = "{{ EAPP_PYTHON_CONSUMER_DIR }}"
 
@@ -44,6 +44,9 @@ job("Distribute Python Consumer Package") {
 
             echo "Ensure pip, setuptools, and wheel are up to date"
             python3 -m pip install --upgrade pip setuptools wheel
+
+            echo "Install required packages for python build"
+            python3 -m pip install twine==4.0.1
 
             sed "10s/.*/    version='{{ VERSION_NUMBER }}',/" ${'$'}EAPP_PYTHON_CONSUMER_DIR/setup.py > ${'$'}EAPP_PYTHON_CONSUMER_DIR/newsetup.py
             mv ${'$'}EAPP_PYTHON_CONSUMER_DIR/newsetup.py ${'$'}EAPP_PYTHON_CONSUMER_DIR/setup.py
