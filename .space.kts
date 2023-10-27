@@ -7,6 +7,7 @@ job("Distribute Python Consumer Package") {
             anyBranchMatching {
                 +"release/*"
                 +"master"
+                +"main"
             }
         }
     }
