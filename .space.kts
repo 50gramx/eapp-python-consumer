@@ -48,6 +48,9 @@ job("Distribute Python Consumer Package") {
             echo "Install required packages for python build"
             python3 -m pip install twine==4.0.1
 
+            echo "Configure pypirc"
+            cp ${'$'}EAPP_PYTHON_CONSUMER_DIR/pypirc ~/.pypirc
+
             sed "10s/.*/    version='{{ VERSION_NUMBER }}',/" ${'$'}EAPP_PYTHON_CONSUMER_DIR/setup.py > ${'$'}EAPP_PYTHON_CONSUMER_DIR/newsetup.py
             mv ${'$'}EAPP_PYTHON_CONSUMER_DIR/newsetup.py ${'$'}EAPP_PYTHON_CONSUMER_DIR/setup.py
 
