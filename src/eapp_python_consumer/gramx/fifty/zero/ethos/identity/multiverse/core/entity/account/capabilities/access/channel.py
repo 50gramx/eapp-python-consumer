@@ -1,13 +1,17 @@
 import grpc
+import pkg_resources
 
 import yaml
 
-CONFIG_FILE_PATH = "gramx/fifty/zero/ethos/identity/multiverse/developer_config.yaml"
-
 
 def create_developer_channel(service_name, insecure=True):
-    with open(CONFIG_FILE_PATH, 'r') as config_file:
+    resource_package = 'eapp_python_consumer'
+    resource_path = 'gramx/fifty/zero/ethos/identity/multiverse/developer_config.yaml'
+    config_stream = pkg_resources.resource_stream(resource_package, resource_path)
+
+    with config_stream as config_file:
         developer_config = yaml.safe_load(config_file)
+
     config = developer_config[service_name]
     if not insecure:
         developer_certificate_path = config['developer_certificate_path']
