@@ -1,4 +1,4 @@
 AccessAccountService:
-  host: "1.tcp.in.ngrok.io"
-  port: 20240
+  host: "122.166.150.115"
+  port: 50501
   developer_certificate_path: "/opt/ethos/apps/service/eapp-python-consumer/secrets/keys/identity/server.crt"
